@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "task1-production-bab1.up.railway.app",
+  baseURL: "task1-production-bab1.up.railway.app/api",
 });
 
 
