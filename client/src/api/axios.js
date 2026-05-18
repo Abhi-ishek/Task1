@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const API = axios.create({
-  baseURL: "https://task1-d6ap.onrender.com/api",
+  baseURL: "http://localhost:8000/api",
 });
 
 
