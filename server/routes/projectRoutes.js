@@ -7,6 +7,7 @@ import {
   createProject,
   getProjects,
   getSingleProject,
+  deleteProject,
 } from "../controller/projectController.js";
 
 import { projectValidation } from "../validators/projectValidator.js";
@@ -34,5 +35,14 @@ router.get("/", protect, getProjects);
 
 // single project
 router.get("/:id", protect, getSingleProject);
+
+
+// delete project (admin only)
+router.delete(
+  "/:id",
+  protect,
+  authorizeRoles("admin"),
+  deleteProject
+);
 
 export default router;
