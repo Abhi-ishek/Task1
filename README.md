@@ -77,6 +77,7 @@ Start the frontend development server:
 ```bash
 npm run dev
 ```
+<<<<<<< HEAD
 
 ## 🔌 API Endpoints Reference
 
@@ -102,3 +103,5 @@ npm run dev
 * `DELETE /:id` - Delete a task (Admin only)
 * `PUT /:id/status` - Update task status
 * `GET /dashboard/stats` - Get task statistics
+=======
+>>>>>>> bc0088d3891a93840f5b7de8f9fe1d2f48331630
